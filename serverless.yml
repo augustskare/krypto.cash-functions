@@ -1,0 +1,15 @@
+service: krypto-cash
+
+provider:
+  name: aws
+  runtime: nodejs6.10
+
+functions:
+  payment:
+    handler: payment.index
+    events:
+      - http:
+          path: payment
+          method: post
+          resp: json
+          cors: true

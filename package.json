@@ -1,0 +1,11 @@
+{
+  "name": "krypto.cash-functions",
+  "version": "1.0.0",
+  "scripts": {
+    "deploy:dev": "npx serverless deploy --stage dev",
+    "deploy:prod": "npx serverless deploy --stage prod"
+  },
+  "dependencies": {
+    "stripe": "^5.4.0"
+  }
+}
